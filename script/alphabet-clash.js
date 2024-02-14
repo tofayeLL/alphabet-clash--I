@@ -1,12 +1,20 @@
 
 
+
+
+
+function handleKeyboardButtonPress (){
+    console.log('button press')
+}
+
+// captured keyboard keypress
+document.addEventListener('keyup', handleKeyboardButtonPress);
+
 // after play function then continuegame() function 
 function continueGame(){
     // step 1: generate a random alphabet
-
     const alphabet = getRandomAlphabet();
     console.log(alphabet);
-
 
     // display current random alphabet
     const displayAlphabet = document.getElementById('display-alphabet');
@@ -14,7 +22,6 @@ function continueGame(){
 
     // set background color on alphabet
     setBackgroundcolor(alphabet);
-
 }
 
 
