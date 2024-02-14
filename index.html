@@ -49,6 +49,18 @@
             font-weight: 600;
             font-style: normal;
         }
+
+        .poppins-bold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .poppins-extrabold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+        }
     </style>
 </head>
 
@@ -74,7 +86,7 @@
         <section id="play-ground" class="hidden ">
             <!-- playground container -->
             <div
-                class="lg:flex lg:flex-col items-center gap-10 container mx-auto px-4 lg:px-20 border-4 border-green-500  lg:py-20 lg:space-y-5 ">
+                class="lg:flex lg:flex-col items-center gap-10 container mx-auto px-4 lg:px-20  lg:py-20 lg:space-y-5 ">
 
                 <!-- screen -->
                 <div class="flex justify-center items-center ">
@@ -140,20 +152,21 @@
 
 
                 <!-- life score -->
-                <div class="flex justify-between items-center w-full my-10">
-
-                    <button class="btn bg-[#9e4d9e] text-white hover:bg-[#f74bf7]
+                <div class="flex justify-between items-center w-full py-10">
+                    <!-- life button -->
+                    <button class="btn text-2xl font-bold bg-[#9e4d9e] text-white hover:bg-[#f74bf7]
                     rounded-full border-none px-5">
                         <span>Life</span>
                         <img src="images/lifeicon.png" alt="">
-                        <span>1</span>
+                        <span id="life">5</span>
                     </button>
 
-                    <button class="btn bg-[#4e08bc] text-white hover:bg-[#7929f8]
+                    <!-- score button -->
+                    <button class="btn text-2xl font-bold bg-[#4e08bc] text-white hover:bg-[#7929f8]
                       rounded-full border-none px-5">
                         <span>Score</span>
                         <img src="images/score.png" alt="">
-                        <span>1</span>
+                        <span id="score">0</span>
                     </button>
 
                 </div>
@@ -165,11 +178,11 @@
 
 
         <!-- final score -->
-        <section class="hidden score flex  items-center justify-center min-h-screen">
+        <section id="final-score-board" class="hidden  flex  items-center justify-center min-h-screen">
             <div class="text-center bg-[#8452d4] px-14 py-10 space-y-8 rounded-lg">
-
-                <h1 class="text-5xl text-white font-bold">Score : 14</h1>
-                <button class="text-lg btn font-semibold ">Play Again</button>
+                <h3 class="text-2xl  poppins-semibold text-white">Game Over !</h3>
+                <h1 class="text-7xl text-white poppins-extrabold">Score : <span id="final-update-score"></span></h1>
+                <button onclick="play()" class="text-lg btn font-semibold ">Play Again</button>
                 <p class="text-xl text-white font-semibold">Practice will make you Pro</p>
 
             </div>
