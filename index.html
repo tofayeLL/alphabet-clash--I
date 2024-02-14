@@ -56,23 +56,25 @@
     <main class="bg-[#010313] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center">
 
         <!-- Home screen -->
-        <section id="home-screen" class="  flex flex-col justify-center items-center h-[100vh] ">
+        <section id="home-screen" class="   flex flex-col justify-center items-center h-[100vh] px-4 lg:px-0">
 
-            <div class="space-y-8 flex flex-col justify-center items-center">
-                <h1 class="text-white text-9xl anton-regular">AlPHABET CLASH</h1>
-                <p class="text-white text-xl poppins-medium">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+            <div class="space-y-8 flex flex-col justify-center text-center items-center">
+                <h1 class="text-white text-5xl lg:text-9xl anton-regular">ALPHABET CLASH</h1>
+                <p class="text-white text-lg lg:text-xl poppins-medium">Unleash Your Keyboard Kung Fu : Press “Enter” to
+                    Play</p>
 
-                <button onclick="play()" class="bg-white text-lg poppins-semibold btn text-black">Play Now</button>
+                <button onclick="play()" class="bg-white text-sm lg:text-lg poppins-semibold btn text-black">Play
+                    Now</button>
             </div>
 
         </section>
 
 
         <!-- play ground screen start -->
-        <section id="play-ground" class="hidden  ">
+        <section id="play-ground" class="hidden ">
             <!-- playground container -->
             <div
-                class="lg:flex lg:flex-col items-center gap-10 container mx-auto px-4 lg:px-20 border-4 border-green-500 py-20">
+                class="lg:flex lg:flex-col items-center gap-10 container mx-auto px-4 lg:px-20 border-4 border-green-500  lg:py-20 lg:space-y-5 ">
 
                 <!-- screen -->
                 <div class="flex justify-center items-center ">
@@ -83,13 +85,11 @@
                             <h3
                                 class="text-white bg-[#323341] rounded-b-md lg:rounded-b-lg px-2 lg:px-8 pb-2 translate-y-[-20%] lg:text-base text-[8px]">
                                 Don't watch keyboard while playing...</h3>
-
-
                         </div>
 
                         <div class="flex justify-center items-center h-full">
 
-                            <p id="display-alphabet" class="text-9xl text-black  font-bold ">Y</p>
+                            <p id="display-alphabet" class="text-9xl text-black  font-bold uppercase">Y</p>
                         </div>
 
                     </div>
@@ -98,8 +98,9 @@
                 </div>
 
                 <!-- keyboard start-->
-                <div>
-                    <div class="flex justify-center gap-1 my-1 w-full">
+                <div class="mt-8 ">
+
+                    <div class="flex justify-center gap-[2px] lg:gap-3 my-2 w-full ">
                         <kbd id="q" class="kbd">q</kbd>
                         <kbd id="w" class="kbd">w</kbd>
                         <kbd id="e" class="kbd">e</kbd>
@@ -110,8 +111,9 @@
                         <kbd id="i" class="kbd">i</kbd>
                         <kbd id="o" class="kbd">o</kbd>
                         <kbd id="p" class="kbd">p</kbd>
+
                     </div>
-                    <div class="flex justify-center gap-1 my-1 w-full">
+                    <div class="flex justify-center gap-[2px] lg:gap-3  my-2 w-full">
                         <kbd id="a" class="kbd">a</kbd>
                         <kbd id="s" class="kbd">s</kbd>
                         <kbd id="d" class="kbd">d</kbd>
@@ -122,7 +124,7 @@
                         <kbd id="k" class="kbd">k</kbd>
                         <kbd id="l" class="kbd">l</kbd>
                     </div>
-                    <div class="flex justify-center gap-1 my-1 w-full">
+                    <div class="flex justify-center gap-[2px] lg:gap-3  my-2 w-full">
                         <kbd id="z" class="kbd">z</kbd>
                         <kbd id="x" class="kbd">x</kbd>
                         <kbd id="c" class="kbd">c</kbd>
@@ -138,7 +140,7 @@
 
 
                 <!-- life score -->
-                <div class="flex justify-between items-center w-full">
+                <div class="flex justify-between items-center w-full my-10">
 
                     <button class="btn bg-[#9e4d9e] text-white hover:bg-[#f74bf7]
                     rounded-full border-none px-5">
@@ -159,7 +161,7 @@
             </div>
 
         </section>
-       
+
 
 
         <!-- final score -->
